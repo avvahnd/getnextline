@@ -3,7 +3,7 @@
 static int	fillbuf(int fd, t_buf *b)
 {
 	size_t	scan;
-	size_t	n;
+	ssize_t	n;
 
 	if (nl_index(b->data, b->start, b->end) < b->end)
 		return (1);
